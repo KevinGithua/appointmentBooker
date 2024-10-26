@@ -76,7 +76,7 @@ function getAvailabilities(
     timezone: string
 ) {
     const dayOfWeek = date.toLocaleString('en-US', { weekday: 'long' }).toLowerCase() as (typeof DAYS_OF_WEEK_IN_ORDER)[number];
-    let availabilities = groupedAvailabilities[dayOfWeek];
+    const availabilities = groupedAvailabilities[dayOfWeek];
 
     if (availabilities == null) return [];
 

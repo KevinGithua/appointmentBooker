@@ -11,7 +11,7 @@ import { Textarea } from "../ui/textarea"
 import { Switch } from "../ui/switch"
 import { createEvent, deleteEvent, updateEvent } from "@/server/actions/events"
 import { AlertDialogTitle, AlertDialog, AlertDialogContent, AlertDialogDescription, AlertDialogHeader, AlertDialogTrigger, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "../ui/alert-dialog"
-import { useState, useTransition } from "react"
+import { useTransition } from "react"
 
 export function EventForm({event}: {event?: {
     id: string
